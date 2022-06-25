@@ -1,0 +1,102 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+    flex-grow: 1;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+}
+
+.logo {
+    height: 80px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.right ul {
+    list-style: none;
+    display: flex;
+    gap: 4vw;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: white;
+}
+
+.logo img {
+    max-height: 80px;
+    width: auto;
+}
+
+.landing-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),url('/images/IMG_6839.JPG');
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    margin: 0;
+}
+
+.content-container {
+    max-width: 75rem;
+    position: absolute;
+    top: 35%;
+    margin-left: 20%;
+}
+
+.content {
+    color: white;
+    flex-direction: column;
+    display: flex;
+    gap: 1.5rem;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+}
+
+.author {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 2em;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.example {
+    border: none;
+    background: #13182e;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    background-color: rgb(8, 27, 68);
+    background: linear-gradient(270deg, #113966, rgb(8, 27, 68));
+}
+
+.example:hover {
+    color: black;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background: white;
+    transition: all 0.3s ease 0s;
+}
