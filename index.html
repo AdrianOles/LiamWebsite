@@ -26,13 +26,13 @@
 
                 <div class="right">
                     <ul>
-                        <li><a href="#">About Me</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        <!-- Title Infromation -->
         <div class="content-container">
             <div class="content">
                 <div class="author">
@@ -42,9 +42,7 @@
                     Freelance Automative Photographer
                 </div>
                 <div class="about-me-button">
-                    <a href="#" class="button">
-                        <span>About Me</span>
-                    </a>
+                    <a class="main-btn" href="#">About Me</a>
                 </div>
             </div>
             <div class="socials">
@@ -60,5 +58,36 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal" id="email-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-content-left">
+                <img id="modal-img" src="images/form.svg" alt="">
+            </div>
+            <div class="modal-content-right">
+                <form action="/" method="get" class="modal-form" id="form">
+                    <h1>Get started with us today! Create your accoutn by
+                        filling out the information below.
+                    </h1>
+                    <div class="form-validation">
+                        <input type="text" class="modal-input" id="name" name="username" placeholder="Enter your name">
+                        <p class="errorText">Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="email" class="modal-input" id="email" name="email" placeholder="Enter your email">
+                        <p class="errorText">Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="text" class="modal-input" id="name" name="name" placeholder="Enter your message">
+                        <p class="errorText">Error Message</p>
+                    </div>
+                    <input type="submit" class="modal-input-btn" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

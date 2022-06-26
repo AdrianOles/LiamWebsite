@@ -1,3 +1,5 @@
+@import url(modal.css);
+
 body,
 html {
     height: 100%;
@@ -125,7 +127,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-.button {
+.main-btn {
     border: none;
     background: #13182e;
     color: #ffffff;
@@ -140,7 +142,7 @@ body {
     background: linear-gradient(270deg, #113966, rgb(8, 27, 68));
 }
 
-.button:hover {
+.main-btn:hover {
     color: black;
     font-weight: 700;
     letter-spacing: 3px;
