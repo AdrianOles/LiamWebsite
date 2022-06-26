@@ -110,6 +110,7 @@
     display: none;
 }
 
+/* Important */
 .form-validation.error p {
     display: block;
 }
