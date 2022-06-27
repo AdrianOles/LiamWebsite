@@ -85,6 +85,7 @@
 .form-validation {
     margin-bottom: 0.5rem;
     width: 80%;
+    padding: 0%;
 }
 
 .form-validation.error {
@@ -115,6 +116,12 @@
     display: block;
 }
 
+textarea {
+    padding: 10px 20px;
+    width: 80%;
+    padding-right: 2px;
+}
+
 .modal-input {
     display: block;
     padding-left: 0.5rem;
@@ -122,12 +129,20 @@
     border-radius: 2px;
     border: none;
     height: 2rem;
-    width: 100%;
+    width: 95%;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.05);
 }
 
 .modal-input::placeholder {
     color: #b1b1b1;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+    font-size: 0.95rem;
+
+}
+
+textarea, input {
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
 }
 
 .modal-input-btn {
@@ -147,6 +162,73 @@
     transition: all 0.4s ease-out;
 }
 
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    width: 98%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+    color: #b1b1b1;
+    font-size: 0.95rem;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0.5rem;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    background-color: white;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
 @media screen and (max-width: 768px) {
     .modal-content-left {
         display: none;
@@ -157,6 +239,12 @@
         width: 70%;
         height: 75%;
     }
+        .modal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 }
 
 @media screen and (max-width: 580px) {
@@ -164,6 +252,11 @@
         margin: 20% auto;
         width: 90%;
         height: 80%;
-        top: 0%;
+    }
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
