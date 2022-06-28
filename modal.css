@@ -13,18 +13,18 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
-    display: none;
+    display: block;
 }
 
 .modal-content {
     background: #131d2b;
     color: white;
-    margin: 10% auto;
-    width: 60%;
+    margin: 2.5% auto;
+    max-width: 70rem;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
     position: relative;
     border-radius: 3px;
-    min-height: 500px;
+    min-height: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -87,9 +87,97 @@ label {
 }
 
 .modal-content-left {
-    background: linear-gradient(90deg, rgba(247,74, 70, 1) 0%, rgba(236, 43, 0, 1) 100%);
+    background: rgb(235, 233, 233);
     border-radius: 0 3px 3px 0;
     position: relative;
+    color: black;
+    padding: 8.5rem 5.5rem;
+}
+
+.personal-information {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    position: absolute;
+    top: 49%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+
+.personal-information h1, h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.personal-information h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.personal-information h2, p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.paragraph p {
+    text-align: left;
+    margin: 0.8rem 0rem;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.paragraph span {
+    font-weight: 900;
+    color: #ef5236;
+}
+
+.skill-container {
+    width: 100%;
+}
+
+.skill-container ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 1.5rem;
+    width: 100%;
+    align-self: center;
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.skill-icon {
+    width: 65px;
+    height: 65px;
+    filter: brightness(0);
+    transition: all 0.3s ease 0s;
+}
+
+.con p {
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.skill-icon:hover {
+    filter: brightness(0.8);
+    transition: all 0.3s ease 0s;
+}
+
+.con:hover p {
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
+
+.skill-container li {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #modal-img {
@@ -108,7 +196,7 @@ label {
 
 .modal-form {
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -131,7 +219,7 @@ label {
     font-weight: 500;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 80%;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.8rem;
     padding: 0px;
     margin-top: 0%;
 }
@@ -141,6 +229,7 @@ label {
     margin-bottom: 0px;
     width: 80%;
     margin: 0%;
+    font-size: 1.2rem;
 }
 
 .form-validation {
@@ -196,6 +285,7 @@ textarea {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-bottom: 1px solid white;
+    font-size: 1rem
 }
 
 .modal-input::placeholder {
@@ -211,16 +301,17 @@ textarea, input {
 }
 
 .modal-input-btn {
-    width: 40%;
-    height: 2rem;
     border-radius: 2px;
     outline: none;
     border: none;
     color: #fff;
     font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
     align-self: flex-start;
+    margin-top: 20px;
     margin-left: 10%;
-    padding: 5px 10px;
+    padding: 12px 20px;
     transition: all 0.6s ease 0s;
     background: linear-gradient(270deg, #f06449, #ef3636);
 }
@@ -229,7 +320,7 @@ textarea, input {
     cursor: pointer;
     background: white;
     color: black;
-    letter-spacing: 1px;
+    letter-spacing: 0.25rem;
     transition: all 0.6s ease 0s;
 }
 
@@ -269,8 +360,8 @@ textarea, input {
 .select-items div,
 .select-selected {
     color: white;
-    font-size: 0.95rem;
-    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0;
