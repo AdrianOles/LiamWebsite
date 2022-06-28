@@ -29,73 +29,61 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.close-btn:hover {
-    cursor: pointer;
-    color: red;
-    transition: 0.2s ease-out;
-}
-
-.close-btn {
+.close-container {
     position: absolute;
     display: block;
-    padding: 12px;
-    top: 30px;
-    right: 30px;
+    top: 10px;
+    right: 2.5px;
     cursor: pointer;
-    color: #fff;
-    width: 10px;
-    height: 10px;
-    transition: all .3s ease;
-    z-index: 10;
+    width: 50px;
+    height: 50px;
+    z-index: 20;
 }
 
-.close-btn span {
-    position: absolute;
-    top: 18px;
-    width: 100%;
+.leftright {
     height: 3px;
-    background-color: white;
-    transition: all .4s cubic-bezier(.694, .048, .355, 1);
-}
-
-:after, :before {
-    box-sizing: border-box;
-}
-
-.close-btn span:first-child {
-    left: 0;
-    transform: rotate(45deg);
-}
-
-.close-btn span:last-child {
-    right: 0;
-    transform: rotate(-45deg);
-}
-
-.close-btn span:after,
-.close-btn span:before {
-    content: "";
+    width: 35px;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
+    margin-top: 24px;
+    background-color: white;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in;
 }
 
-.close-btn span:before {
-    background-color: #f06449;
-    transition: all .3s ease;
+.rightleft {
+    height: 3px;
+    width: 35px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: white;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in;
 }
 
-.close-btn span:after {
-    background-color: #f3f3f3;
-    transition: all .3s ease .3s;
+label {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: .6em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .3s ease-in;
+    opacity: 0;
 }
 
-::selection {
-    background: #1c1d25;
-    color: #f3f3f3;
-    text-shadow: none;
+.close-container:hover .leftright {
+    transform: rotate(-45deg);
+    background-color: orangered;
+}
+
+.close-container:hover .rightleft {
+    transform: rotate(45deg);
+    background-color: orangered;
+}
+
+.close-container:hover label {
+    opacity: 1;
 }
 
 .modal-content-left {
@@ -132,14 +120,15 @@
 }
 
 .modal-form h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: left;
     width: 80%;
     margin-bottom: 10px;
 }
 
 .modal-form h2 {
-    font-size: 0.80rem;
+    font-size: 1em;
+    font-weight: 500;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 80%;
     margin-bottom: 1.3rem;

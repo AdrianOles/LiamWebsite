@@ -2,7 +2,7 @@
 const modal = document.getElementById('email-modal');
 const contactBtn = document.querySelector('.contact-btn');
 const aboutMeBtn = document.querySelector('.aboutMe');
-const closeBtn = document.querySelector('.close-btn');
+const closeBtn = document.querySelector('.close-container');
 
 //Click events
 contactBtn.addEventListener('click', () => {
