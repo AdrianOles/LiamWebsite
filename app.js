@@ -24,51 +24,51 @@ window.addEventListener('click', (e) => {
 })
 
 
-//Form Validation
-const form = document.getElementById('form');
-const username = document.getElementById('name');
-const email = document.getElementById('email');
-const errorText = document.getElementsByClassName('errorText');
+// //Form Validation
+// const form = document.getElementById('form');
+// const username = document.getElementById('name');
+// const email = document.getElementById('email');
+// const errorText = document.getElementsByClassName('errorText');
 
-//Show error message
-function showError(input, message) {
-    const formValidation = input.parentElement;
-    formValidation.className = 'form-validation error';
+// //Show error message
+// function showError(input, message) {
+//     const formValidation = input.parentElement;
+//     formValidation.className = 'form-validation error';
 
-    const errorMessage = formValidation.querySelector('p');
-    errorMessage.innerText = message;
-    errorText.style.display = 'block';
-}
+//     const errorMessage = formValidation.querySelector('p');
+//     errorMessage.innerText = message;
+//     errorText.style.display = 'block';
+// }
 
-//Show Valid Message
-function showValid(input) {
-    const formValidation = input.parentElement;
-    formValidation.className = 'form-validation valid';
-}
+// //Show Valid Message
+// function showValid(input) {
+//     const formValidation = input.parentElement;
+//     formValidation.className = 'form-validation valid';
+// }
 
-//Check Required fields
-function checkRequired(inputArr) {
-    inputArr.forEach(function(input) {
-        if (input.value.trim() === '')
-        {
-            showError(input, `${getFieldName(input)} is required`);
-        } else {
-            showValid(input);
-        }
-    })
-}
+// //Check Required fields
+// function checkRequired(inputArr) {
+//     inputArr.forEach(function(input) {
+//         if (input.value.trim() === '')
+//         {
+//             showError(input, `${getFieldName(input)} is required`);
+//         } else {
+//             showValid(input);
+//         }
+//     })
+// }
 
-//Get Field Name
-function getFieldName(input) {
-    return input.name.charAt(0).toUpperCase() + input.name.slice(1);
-}
+// //Get Field Name
+// function getFieldName(input) {
+//     return input.name.charAt(0).toUpperCase() + input.name.slice(1);
+// }
 
-//Event Listeners
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+// //Event Listeners
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
 
-    checkRequired([username, email]);
-})
+//     checkRequired([username, email]);
+// })
 
 //Select city
 var x, i, j, l, ll, selElmnt, a, b, c;

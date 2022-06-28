@@ -66,22 +66,22 @@
                 <img id="modal-img" src="images/form.svg" alt="">
             </div>
             <div class="modal-content-right">
-                <form action="/" method="get" class="modal-form" id="form">
+                <form action="https://formspree.io/f/mdobvyek" method="POST" class="modal-form" id="form">
                     <h1>Contact me!</h1>
                     <h2>I'm always open to freelance inquiries and collaborations.</h2>
                     <p class="form-option">Name <span>*</span></p>
                     <div class="form-validation">
-                        <input type="text" class="modal-input" id="name" name="name" placeholder="">
+                        <input type="text" class="modal-input" id="name" name="Name" placeholder="">
                         <p class="errorText">Error Message</p>
                     </div>
                     <p class="form-option">E-mail <span>*</span></p>
                     <div class="form-validation">
-                        <input type="email" class="modal-input" id="email" name="email" placeholder="">
+                        <input type="email" class="modal-input" id="email" name="Email" placeholder="">
                         <p class="errorText">Error Message</p>
                     </div>
                     <div class="form-validation">
                         <div class="custom-select">
-                            <select>
+                            <select name="City">
                                 <option value="0">Choose a city: <span>*</span></option>
                                 <option value="1">Milton</option>
                                 <option value="2">Niagara Falls</option>
@@ -94,10 +94,10 @@
                     </div>
                     <p class="form-option">Message <span>*</span></p>
                     <div class="form-validation">
-                        <textarea type="text" class="modal-input" id="name" name="name" placeholder="" required="true" ></textarea>
+                        <textarea type="text" class="modal-input" id="name" name="Message" placeholder="" required="true" ></textarea>
                         <p class="errorText">Error Message</p>
                     </div>
-                    <input type="submit" class="modal-input-btn" value="Send Message">
+                    <button type="submit" class="modal-input-btn">Send Message</button>
                 </form>
             </div>
         </div>
