@@ -167,20 +167,26 @@ textarea, input {
 }
 
 .modal-input-btn {
-    width: 80%;
+    width: 50%;
     height: 2rem;
     border-radius: 2px;
-    background-color: red;
     outline: none;
     border: none;
-    color: white;
+    color: #fff;
     font-size: 1rem;
+    align-self: flex-start;
+    margin-left: 10%;
+    padding: 5px 10px;
+    transition: all 0.6s ease 0s;
+    background: linear-gradient(270deg, #f06449, #ef3636);
 }
 
 .modal-input-btn:hover {
     cursor: pointer;
-    background-color: blue;
-    transition: all 0.4s ease-out;
+    background: white;
+    color: black;
+    letter-spacing: 1px;
+    transition: all 0.6s ease 0s;
 }
 
 .custom-select {
