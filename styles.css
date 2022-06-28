@@ -11,13 +11,15 @@ body {
     height: 100vh;
 }
 
+
+/* Cursor Customization */
 .cursor {
     width: 20px;
     height: 20px;
     border: 1px solid white;
     border-radius: 50%;
     position: absolute;
-    transition-duration: 200ms;
+    transition-duration: 100ms;
     transition-timing-function: ease-out;
     animation: cursorAnim .5s infinite alternate;
     pointer-events: none;
@@ -78,6 +80,8 @@ body {
     border: 1px solid red;
 }
 
+
+/* Back to content */
 .header {
     display: flex;
     justify-content: space-between;
@@ -103,7 +107,7 @@ body {
     display: flex;
     gap: 4vw;
     font-size: 1.6rem;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .right a {
@@ -124,6 +128,7 @@ body {
     --d: 100%;
     background-position: 0% calc(100% - 3px), 100% calc(100% - 3px);
     transition: 0.3s, background-position 0.3s 0.3s;
+    font-weight: 900;
 }
 
 .logo img {
