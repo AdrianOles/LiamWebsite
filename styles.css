@@ -1,5 +1,12 @@
 @import url(modal.css);
 
+:root {
+    --card-width: 200px;
+    --card-height: 300px;
+    --card-transition-duration: 800ms;
+    --card-transition-easing: ease;
+}
+
 body,
 html {
     height: 100%;
@@ -305,3 +312,4 @@ body {
 }
 
 .is-hidden {display: none;}
+
