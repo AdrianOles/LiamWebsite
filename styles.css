@@ -176,6 +176,9 @@ body {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    width: 70%;
+    position: absolute;
+    left: 15%;
 }
 
 .slider {
@@ -185,23 +188,15 @@ body {
     flex-grow: 1;
     margin: 0 var(--img-gap);
     transform: translateX(calc(var(--slider-index) * -100%));
-    transition: transform 1000ms ease-in-out;
+    transition: transform 450ms ease-in-out;
 }
 
-.slider > img.tall {
+.slider > img {
+    image-resolution: from-image 50dpi;
     max-width: calc(100% / var(--items-per-screen));
-    max-height: 25rem;
+    max-height: 20rem;
     flex: 0 0 calc(100% / var(--items-per-screen));
-    aspect-ratio: 9 / 16;
-    padding: var(--img-gap);
-    border-radius: 1rem;
-    object-fit: cover;
-}
-
-.slider > img.wide {
-    max-width: calc(100% / var(--items-per-screen));
-    flex: 0 0 calc(100% / var(--items-per-screen));
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 10 / 10;
     padding: var(--img-gap);
     border-radius: 1rem;
     object-fit: cover;
@@ -233,6 +228,7 @@ body {
 .right-handle {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    z-index: 10;
 }
 
 .handle:hover,
@@ -250,6 +246,8 @@ body {
 }
 
 .head {
+    width: 70%;
+    margin-left: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -298,7 +296,7 @@ body {
     font-size: 3rem;
     font-family: 'League Spartan', Helvetica, Arial, sans-serif;
     font-weight: 900;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 1000px) {
