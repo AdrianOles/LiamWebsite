@@ -1,3 +1,5 @@
+import "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js";
+
 //Modal items
 const modal = document.getElementById("email-modal");
 const contactBtn = document.querySelector(".contact-btn");
@@ -205,3 +207,21 @@ function throttle(cb, delay = 1000) {
         setTimeout(timeoutFunc, delay)
     }
 }
+
+const scrollTracker = document.querySelector(".scroll-tracker");
+
+const scrollTrackerTimeline = new ScrollTimeline({
+    source: document.scrollingElement,
+    orientation: "block",
+    scrollOffsets: [CSS.percent(0), CSS.percent(100)]
+});
+
+scrollTracker.animate(
+    {
+        transform: ["scaleX(0)", "scaleX(1)"]
+    },
+    {
+        duration: 1,
+        timeline: scrollTrackerTimeline
+    }
+);
