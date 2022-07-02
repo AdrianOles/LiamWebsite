@@ -83,7 +83,7 @@ body {
 }
 
 .landing-container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),url('./images/image-nine.JPG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),url('./images/image-nine.jpeg');
     height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
@@ -144,7 +144,7 @@ body {
 .description {
     font-size: 2em;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .main-btn {
@@ -199,7 +199,7 @@ body {
 }
 
 .slider > img.wide {
-    max-width: calc(130% / var(--items-per-screen));
+    max-width: calc(100% / var(--items-per-screen));
     flex: 0 0 calc(100% / var(--items-per-screen));
     aspect-ratio: 16 / 9;
     padding: var(--img-gap);
@@ -260,6 +260,8 @@ body {
 .title {
     font-size: 2rem;
     margin: 0;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+    font-weight: 700;
 }
 
 .progress-bar {
@@ -276,6 +278,27 @@ body {
 
 .progress-item.active {
     background-color: rgba(0,0,0,0.3);
+}
+
+.introduction {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: rgb(175, 126, 3);
+    margin: 2rem 0;
+}
+
+.myWork {
+    font-size: 3rem;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    margin-bottom: 5rem;
 }
 
 @media (max-width: 1000px) {
