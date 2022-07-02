@@ -185,7 +185,7 @@ body {
     flex-grow: 1;
     margin: 0 var(--img-gap);
     transform: translateX(calc(var(--slider-index) * -100%));
-    transition: transform 250ms ease-in-out;
+    transition: transform 1000ms ease-in-out;
 }
 
 .slider > img.tall {
