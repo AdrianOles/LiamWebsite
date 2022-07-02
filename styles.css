@@ -308,3 +308,19 @@ body {
         --items-per-screen: 2;
     }
 }
+
+@media (max-width: 500px) {
+    .content {
+        margin-left: 5%;
+    }
+
+    .head {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .container {
+        width: 90%;
+        left: 5%;
+    }
+}
