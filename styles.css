@@ -358,7 +358,7 @@ body {
 .scroll-tracker {
     position: fixed;
     inset: 0 0 auto;
-    height: .3rem;
+    height: .2rem;
     background-color: white;
     z-index: 500;
     transform-origin: left;
