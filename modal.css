@@ -327,7 +327,7 @@ textarea, input {
 .custom-select {
     position: relative;
     font-family: Arial;
-    width: 98%;
+    width: 95%;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid white;
     margin-bottom: 10px;

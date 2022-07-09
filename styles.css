@@ -238,7 +238,7 @@ body {
     flex-grow: 1;
     margin: 0 var(--img-gap);
     transform: translateX(calc(var(--slider-index) * -100%));
-    transition: transform 500ms ease-in-out;
+    transition: transform 650ms ease-in-out;
 }
 
 .slider > img {
@@ -351,7 +351,60 @@ body {
 }
 
 .second {
-    margin-top: 5rem;
+    margin-top: 3rem;
+}
+
+.fav-shots {
+    background: white;
+    max-height: 100%;
+    margin: 0% auto;
+    padding: 0px;
+}
+
+.fav-shots__container {
+    max-width: 100%;
+    max-height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    gap: 2rem;
+}
+
+.fav-shots__title {
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+    letter-spacing: 5px;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 3rem;
+    margin-bottom: 0rem;
+}
+
+.shot-image-top, .fav-shots__bottom {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 90%;
+}
+
+.shot-image-bottom {
+    width: 20%;
+}
+
+.shot-image-top img, .fav-shots__bottom img{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    object-fit: cover;
+}
+
+.shot-image-top {
+    max-height: 45vh;
+}
+
+.fav-shots__bottom img {
+    width: 18rem;
+    height: 16rem;
 }
 
 /* Scroll Tracking */
