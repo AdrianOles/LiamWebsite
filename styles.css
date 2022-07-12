@@ -596,12 +596,13 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.footer-credit a{
+.footer-credit a, .footer-links a {
     text-decoration: none;
     color: inherit;
 }
 
-.footer-credit a:hover {
+.footer-credit a:hover, .footer-links a:hover {
+    cursor: pointer;
     font-weight: 900;
     color: aqua;
 }
