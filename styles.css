@@ -430,6 +430,15 @@ body {
     transform-origin: left;
 }
 
+.scroll-tracker-portfolio {
+    position: fixed;
+    inset: 0 0 auto;
+    height: .25rem;
+    background-color: black;
+    z-index: 500;
+    transform-origin: left;
+}
+
 .logo-portfolio {
     filter: brightness(0);
     height: 80px;
@@ -453,6 +462,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.7rem;
+    padding: 0 7.5%;
 }
 
 .grid-image {
@@ -467,6 +477,133 @@ body {
 .grid-image, .grid-image-wide {
     border-radius: 10px;
     box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+/* Portfolio Background Animation */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: black;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small, .medium, .large, .xlarge, .xxlarge {
+    position: fixed;
+}
+
+.small {
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+}
+
+.medium {
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+}
+
+.large {
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+}
+
+.xlarge {
+    width: 800px;
+    height: 800px;
+    left: -400px;
+    bottom: -400px;
+}
+
+.xxlarge {
+    width: 1000px;
+    height: 1000px;
+    left: -500px;
+    bottom: -500px;
+}
+
+.shade1 {
+    opacity: 0.2;
+}
+
+.shade2 {
+    opacity: 0.5;
+}
+
+.shade3 {
+    opacity: 0.7;
+}
+
+.shade4 {
+    opacity: 0.8;
+}
+
+.shade5 {
+    opacity: 0.9;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+/* End of Background */
+
+.footer-container {
+    background-color: black;
+    padding: 3rem 0;
+    flex-direction: column;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    color: white;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+}
+
+.footer-logo img{
+    width: 5rem;
+}
+
+
+.footer-links ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.footer-credit {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-credit a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-credit a:hover {
+    font-weight: 900;
+    color: aqua;
 }
 
 @media (max-width: 1000px) {
