@@ -466,10 +466,12 @@ body {
     justify-content: center;
     gap: 0.7rem;
     padding: 0 7.5%;
+    padding-bottom: 2rem;
 }
 
 .grid-image {
     max-width: calc(100% / var(--grid-image-counter));
+    object-fit: cover;
 }
 
 .grid-image-wide {
