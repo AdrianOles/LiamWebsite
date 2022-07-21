@@ -70,13 +70,9 @@ body {
 }
 
 .preview-content {
-    background: black;
+    min-height: 100%;
+    background-color: black;
     padding-bottom: 1.5rem;
-}
-
-.line-bottom {
-    background: linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.219)) no-repeat center/1px 100%;
-    max-height: 100vh;
     color: white;
 }
 
@@ -138,7 +134,7 @@ body {
 
 .landing-container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),url('./images/image-nine.jpeg');
-    height: 100%;
+    min-height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -153,6 +149,7 @@ body {
     top: 35%;
     display: flex;
     justify-content: space-between;
+    min-height: 30vh;
 }
 
 .content {
@@ -330,7 +327,7 @@ body {
     flex-direction: column;
     display: flex;
     align-items: center;
-    height: 20vh;
+    min-height: 20vh;
 }
 
 .introduction hr {
@@ -366,7 +363,7 @@ body {
 
 .fav-shots {
     background: white;
-    max-height: 100%;
+    min-height: 90%;
     margin: 0% auto;
     padding: 0px;
 }
@@ -420,7 +417,8 @@ body {
 
 .fav-shots__bottom img {
     width: 22.5%;
-    height: 25vh;
+    min-height: 25vh;
+    max-height: 50vh;
 }
 
 /* Scroll Tracking */
@@ -612,6 +610,10 @@ body {
     color: aqua;
 }
 
+.fav-shots-image-container {
+    display: none;
+}
+
 @media (max-width: 1000px) {
     .slider {
         --items-per-screen: 3;
@@ -621,5 +623,50 @@ body {
 @media (max-width: 500px) {
     .slider {
         --items-per-screen: 2;
+    }
+}
+
+@media (max-width: 425px) {
+    .content {
+        margin-left: 5vw;
+    }
+
+    .progress-bar {
+        display: none;
+    }
+
+    .fav-shots__title {
+        letter-spacing: 1px;
+        margin: 2rem 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    .fav-shots__container {
+        gap: 0;
+    }
+
+    .shot-image-top, .fav-shots__bottom {
+        display: none;
+    }
+
+    .fav-shots-image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .fav-shots-image-container img {
+        width: 40vw;
+        object-fit: cover;
+    }
+
+    .fav-shots-wide {
+        min-width: 90vw;
+    }
+
+    .footer-credit {
+        width: 90%;
     }
 }
