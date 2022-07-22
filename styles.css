@@ -363,7 +363,7 @@ body {
 
 .fav-shots {
     background: white;
-    min-height: 90%;
+    min-height: 60%;
     margin: 0% auto;
     padding: 0px;
 }
@@ -668,5 +668,12 @@ body {
 
     .footer-credit {
         width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .slider {
+        --items-per-screen: 1;
     }
 }
