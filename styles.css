@@ -245,7 +245,6 @@ body {
     max-width: calc(100% / var(--items-per-screen));
     min-height: 100%;
     flex: 0 0 calc(100% / var(--items-per-screen));
-    aspect-ratio: 10 / 10;
     padding: var(--img-gap);
     border-radius: 1rem;
     object-fit: cover;
@@ -607,7 +606,7 @@ body {
 .footer-credit a:hover, .footer-links a:hover {
     cursor: pointer;
     font-weight: 900;
-    color: aqua;
+    color: #ef5236;
 }
 
 .fav-shots-image-container {
