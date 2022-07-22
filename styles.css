@@ -251,6 +251,7 @@ body {
 }
 
 .handle {
+    padding: 0;
     border: none;
     border-radius: 1rem;
     flex-grow: 0;
